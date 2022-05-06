@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="lacity1.CSS">
+    <style>
+
+nav {
+    width: 1000;
+    text-align: center;
+    background: #006600;
+}
+
+/*This selector is targeting the <ul> element within the <nav> element*/
+
+nav ul {
+    display: inline-block;
+    /*Comment:  this tells the browser to display the ul element inline (side by side), but it allows the list to retain it's block-level characteristics - more on that later.*/
+    margin: 0px;
+    /*Comment: zero pixels of space in the margin (the space around an element.*/
+    padding: 0px;
+    /*Comment: zero pixels of space between the element's border and its content*/
+    float: right;
+}
+
+/*This selector is targeting the <li> elements that are within the <nav> element*/
+
+nav li {
+    float: left;
+    list-style-type: none;
+    /*Comment:  this tells the browser to remove the bullet points that would normally be displayed in an unordered list.*/
+}
+
+/*This selector is targeting the links.  These are the <a> elements that are within the within the <nav> element */
+
+nav a {
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    /*Comment:  this tells the browser to remove the underline that is normally displayed under a link.*/
+    display: block;
+    /*the <a> tags are inline but in this case we need to be able to set a width so let's make them appear as block level*/
+    width: 100px;
+    padding: 8px 0px;
+    
+}
+
+/*This selector targets the "hover" pseudo-class of the <a> element.  This css style will be activated when the mouse moves over the link.*/
+nav a:hover {
+    background-color: rgb(190, 197, 190);
+    color: rgb(15, 14, 14);
+}
+
+.first {
+    display: inline-block;
+    width: 300px;
+    padding: 0px;
+    background-color: #ccc;
+    margin-right: 0 auto;
+}
+
+.second {
+    display: inline-block;
+    width: 300px;
+    padding: 0px;
+    background-color: #ccc;
+    margin-right: 0 auto;
+
+}
+
+.third {
+    display: inline-block;
+    margin: auto;
+    width: 300px;
+    padding: 0px;
+    background-color: #ccc;
+
+}
+
+.news {
+    width: 1000px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ccc;
+    float: right;
+}
+
+.trending {
+    float: right;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* 
+.video col-12 col-lg-8{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+ */
+
+ .big {
+     background-image: url(images/la5aa.jpg);
+     height: 500px;
+     width: 1000px;
+ }
+
+    </style>
+
+</head>
+
+<body style="width: 1000px; margin: auto; font-family: sans-serif;">
+    <nav class="update">
+        <ul style="background-color: rgb(17, 8, 34); width: 1000px;">
+            <li><a href="https://coronavirus.lacity.org/">Update on coronavirus</a></li>
+            <li><a href="https://www.lacity.org/myla311">City Services</a></li>
+            <li><a href="https://www.lacity.org/government/popular-information/city-directory">City Directory</a></li>
+            <li><a href="#chat">Chat With CHIP</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+
+    <div class="big">
+        <nav style="margin-top: auto; width: 955px; ">
+            <ul>
+                <li><a href="https://www.lacity.org/residents">RESIDENTS</a></li>
+                <li><a href="https://www.lacity.org/business/popular-information">BUSINESS</a></li>
+                <li><a href="https://www.lacity.org/visitors">VISITORS</a></li>
+                <li><a href="https://www.lacity.org/jobs/find-job-city">JOBS</a></li>
+                <li><a href="https://www.lacity.org/government">GOVERNMENT</a></li>
+
+            </ul>
+        </nav>
+    </div>
+<br>
+<br>
+<!-- <div class="search">
+<input type="text" placeholder="Search..">
+</div> -->
+
+
+    <!-- Comment: the first article -->
+    <section style="margin-right: 15px; margin-left: 50px; padding-right: 15px; ">
+        <div class="first">
+            <article style="float: left; width:300px; padding: 0px; height: 150px; ">
+                <h2>Request City Services</h2>
+                <p>Request the most sought after City services like trash pickup & graffiti removal</p>
+
+            </article>
+        </div>
+        <!-- Comment: the second article -->
+        <div class="second">
+            <article style="float:left; width:300px; padding: 0px; height: 150px;">
+
+                <h2>COVID-19 Resources</h2>
+                <p>Information on COVID-19 vaccination and testing services in LA</p>
+
+            </article>
+        </div>
+        <!-- Comment: the third article -->
+        <div class="third">
+            <article style="float:left; width:300px; padding: 0px; height: 150px;">
+
+                <h2>City Directory</h2>
+                <p>The websites & social media for the City's departments & elected officials</p>
+
+            </article>
+        </div>
+
+    </section>
+
+    <!-- Comment: the second section -->
+
+    <section style="margin-right: 15px; margin-left: 50px; padding-right: 15px;">
+        <div class="first">
+            <article style="float: left; width:300px; padding: 0px; height: 150px;">
+                <h2>City Calendar</h2>
+                <p>Find City Council, Board and Commission meetings & other City sponsored events</p>
+
+            </article>
+        </div>
+        <!-- Comment: the second article -->
+        <div class="second">
+            <article style="float:left; width:300px; padding: 0px; height: 150px;">
+
+                <h2>Meetings & Agendas</h2>
+                <p>Visit the City Clerk website to download meeting agendas</p>
+            </article>
+        </div>
+        <!-- Comment: the third article -->
+        <div class="third">
+            <article style="float:left; width:300px; padding: 0px; height: 150px;">
+
+                <h2>27th Street Incident</h2>
+                <p>LA City's Coordination for the 27th Street Incident</p>
+            </article>
+        </div>
+
+    </section>
+
+    <h1 style="text-indent: 5%;">Highlights </h1>
+
+    <!-- Comment: the third section -->
+    <section style="margin-right: 15px; margin-left: 50px; padding-right: 15px;">
+        <div class="first">
+            <article style="float: left; width:300px; padding: 0px;">
+                <img style="width: 300px;" src="images/City_Seal_Blue.png.webp" <p>Watch Mayor Eric Garcetti's State of
+                the City Address on April 14</p>
+
+                <h6>April 13, 2022</h6>
+            </article>
+        </div>
+        <!-- Comment: the second article -->
+        <div class="second">
+            <article style="float:left; width:300px; padding: 0px;">
+                <img style="width: 300px;" src="images/vaxfacts2520Jan252015.png.webp" <p>Visit Coronavirus.LACity.org
+                for COVID-19 Vaccine & Testing Information</p>
+
+                <h6>April 13, 2022</h6>
+            </article>
+        </div>
+        <!-- Comment: the third article -->
+        <div class="third">
+            <article style="float:left; width:300px; padding: 0px;">
+                <img style="width: 300px;" src="images/bigstock-Indianapolis--Circa-March---288788131.jpg.webp" <p>Learn
+                About Free Tax Preparation Services in Los Angeles</p>
+
+                <h6>April 11, 2022</h6>
+            </article>
+        </div>
+        <p>
+            <a style="float: right;" href="https://www.lacity.org/highlights"> see more</a>
+        </p>
+    </section>
+    <br>
+    <br>
+
+    <div class="news">
+
+        <h1>Trending News</h1>
+
+        <div class="trending">
+
+            <nav>
+                <li><a href="#tweet">Latest Tweets</a></li>
+                <li><a href="#pass">#Passover</a></li>
+                <li><a href="#month">#EarthMonth</a></li>
+                <li><a href="#life">#Ramadan</a></li>
+                <li><a href="#jobs">#hiring</a></li>
+                <li><a href="#wise">#Bewaterwise</a></li>
+            </nav>
+            <br>
+            <br>
+            <br>
+
+            <section>
+                <div class="first">
+                    <article style="float: left; width:300px; padding: 0px; margin: 0px;">
+                        <img src="https://via.placeholder.com/250x250">
+
+
+                        <p style="padding: 0; margin: 0;">Lorem ipsum dolor sit amet, ut porta donec eget. Urna pede mi.
+                            Metus
+                            est, sed arcu aliquam pede vel dolor nulla, mauris quis commodo dolor, suspendisse sapien
+                            tincidunt
+                            ut lacus et, tincidunt arcu proin.
+                        </p>
+                    </article>
+                </div>
+                <!-- Comment: the second article -->
+                <div class="second">
+                    <article style="float:left; width:300px; padding: 0px; margin: 0px;">
+                        <img src="https://via.placeholder.com/250x250">
+
+                        <p style="padding: 10px; margin: 0;">Lorem ipsum dolor sit amet, ut porta donec eget. Urna pede
+                            mi.
+                            Metus est, sed arcu aliquam pede vel dolor nulla, mauris quis commodo dolor, suspendisse
+                            sapien
+                            tincidunt ut lacus et, tincidunt arcu proin.
+
+                        </p>
+                    </article>
+                </div>
+                <!-- Comment: the third article -->
+                <div class="third">
+                    <article style="float:left; width:300px; padding: 0px; margin: 0px;">
+                        <img src="https://via.placeholder.com/250x250">
+
+
+                        <p style="padding: 0; margin: 0;">Lorem ipsum dolor sit amet, ut porta donec eget. Urna pede mi.
+                            Metus
+                            est, sed arcu aliquam pede vel dolor nulla, mauris quis commodo dolor, suspendisse sapien
+                            tincidunt
+                            ut lacus et, tincidunt arcu proin.
+
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <div class="first">
+                    <article style="float: left; width:300px; padding: 0px; margin: 0px;">
+                        <img src="https://via.placeholder.com/250x250">
+
+
+                        <p style="padding: 0; margin: 0;">Lorem ipsum dolor sit amet, ut porta donec eget. Urna pede mi.
+                            Metus
+                            est, sed arcu aliquam pede vel dolor nulla, mauris quis commodo dolor, suspendisse sapien
+                            tincidunt
+                            ut lacus et, tincidunt arcu proin.
+                        </p>
+                    </article>
+                </div>
+                <!-- Comment: the second article -->
+                <div class="second">
+                    <article style="float:left; width:300px; padding: 0px; margin: 0px;">
+                        <img src="https://via.placeholder.com/250x250">
+
+                        <p style="padding: 10px; margin: 0;">Lorem ipsum dolor sit amet, ut porta donec eget. Urna pede
+                            mi.
+                            Metus est, sed arcu aliquam pede vel dolor nulla, mauris quis commodo dolor, suspendisse
+                            sapien
+                            tincidunt ut lacus et, tincidunt arcu proin.
+
+                        </p>
+                    </article>
+                </div>
+                <!-- Comment: the third article -->
+                <div class="third">
+                    <article style="float:left; width:300px; padding: 0px; margin: 0px;">
+                        <img src="https://via.placeholder.com/250x250">
+
+
+                        <p style="padding: 0; margin: 0;">Lorem ipsum dolor sit amet, ut porta donec eget. Urna pede mi.
+                            Metus
+                            est, sed arcu aliquam pede vel dolor nulla, mauris quis commodo dolor, suspendisse sapien
+                            tincidunt
+                            ut lacus et, tincidunt arcu proin.
+
+                        </p>
+                    </article>
+                </div>
+                <br>
+                <p>
+                    <a style="float: left;" href="https://www.lacity.org/tweets"> see more tweets</a>
+                </p>
+            </section>
+
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/e1tHgLHy1pU" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    
+    <h1>LA CityView 35</h1>
+    <h3>Your City, Your Channel.</h3>
+
+    <p>"LA CityView" is the City of Los Angeles' official cable channel available on channel 35 and produces Emmy award
+        winning shows geared for the citizens of Los Angeles such as "LA This Week" and "LA This Minute"</p>
+    <br>
+    <br>
+    <br>
+    <br>
+<br>
+<br>
+
+    <footer>
+        <div>
+            <section
+                style="overflow: auto; margin:auto; width: auto;  height: auto; padding: 0px 8px; border: solid 2px #000; color: white; background-color: black;">
+
+                <article style="overflow:auto; float: left; width:300px; padding: 10px 0px; margin: 0px;">
+                    <p> City of Los Angeles</p>
+                    <p>200 N Spring St, Los Angeles, CA 90012</p>
+                    <p>Call 311 or 213-473-3231</p>
+                    <p>TDD Call 213-473-5990</p>
+                    <p><a href="https://www.lacity.org/submit-feedback">Submit Feedback</a></p>
+                    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScGtLubBXVw1sFdgMuY1Abv4RTrMGP60iqO5vVLMIx2Vq0w7g/viewform">Submit Feedback About LACity.org</a></p>
+
+                </article>
+
+                <article style="overflow:auto; float:left; width:300px; padding: 10px 0px; margin: 0px;">
+                    <p>Stay Connected</p>
+                    <p><a href="https://www.lacity.org/tweets">Today's Trending News</a></p>
+                    <p><a href="https://twitter.com/lacity">twitter.com/LACity</a></p>
+                    <p><a href="https://www.facebook.com/CityofLosAngeles/">facebook.com/CityofLosAngeles</a></p>
+                    <p><a href="https://www.lacity.org/government/popular-information/city-directory">Citywide Directory</a></p>
+
+                </article>
+
+                <article style="overflow:auto; float:left; width:300px; padding: 10px 0px; margin: 0px;">
+                    <p>Quick Links</p>
+                    <p><a href="https://www.lacity.org/residents">Residents</a></p>
+                    <p><a href="https://www.lacity.org/business/popular-information">Business</a></p>
+                    <p><a href="https://www.lacity.org/visitors">Visitors</a></p>
+                    <p><a href="https://www.lacity.org/jobs/find-job-city">Jobs</a></p>
+                    <p><a href="https://www.lacity.org/government">Government</a></p>
+
+                </article>
+
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
